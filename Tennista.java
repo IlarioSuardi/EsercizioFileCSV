@@ -13,7 +13,6 @@ class Tennista {
         this.titoli = titoli;
     }
 
-    @Override
     public String toString() {
         return nome + "," + cognome + "," + nazione + "," + rankingATP + "," + titoli;
     }
