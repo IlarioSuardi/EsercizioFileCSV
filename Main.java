@@ -30,9 +30,9 @@ class Main {
             br.close();
             fr.close();
 
-            System.out.println("Oggetti creati:");
+            System.out.println("Oggetti in formato CSV:");
             for (int j = 0; j < i; j++) {
-                System.out.println(tennisti[j].toString());
+                System.out.println(tennisti[j].toCSV());
             }
 
         } catch (IOException e) {
