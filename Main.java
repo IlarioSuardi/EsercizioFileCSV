@@ -18,9 +18,8 @@ class Main {
                 Tennista t = new Tennista(
                         campi[0],
                         campi[1],
-                        campi[2],
-                        Integer.parseInt(campi[3].trim()),
-                        Integer.parseInt(campi[4].trim())
+                        Integer.parseInt(campi[2].trim()),
+                        Integer.parseInt(campi[3].trim())
                 );
 
                 tennisti[i] = t;
@@ -30,7 +29,7 @@ class Main {
             br.close();
             fr.close();
 
-            System.out.println("ORDINE PER CLASSIFICA:");
+            System.out.println("ORDINE PER CLASSIFICA (tennis.csv):");
             for (int j = 0; j < i; j++) {
                 System.out.println(tennisti[j].toCSV());
             }
@@ -45,7 +44,7 @@ class Main {
                 }
             }
 
-            System.out.println("ORDINE PER TITOLI VINTI:");
+            System.out.println("\nORDINE PER TITOLI VINTI (copia.csv):");
             for (int j = 0; j < i; j++) {
                 System.out.println(tennisti[j].toCSV());
             }
